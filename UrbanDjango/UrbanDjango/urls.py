@@ -17,9 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from task2.views import func_view, class_view
+from task3.views import main_page, anchor, book, info
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', anchor),
     path('func/', func_view),
-    path('class/', class_view.as_view())
+    path('class/', class_view.as_view()),
+    path('lakehouse/', main_page),
+    path('lakehouse/book', book),
+    path('lakehouse/info', info),
 ]

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+      <style>
+        /* Базовый стиль кнопки */
+        .button {
+          display: inline-block;
+          padding: 10px 20px;
+          font-size: 16px;
+          font-weight: bold;
+          text-align: center;
+          text-decoration: none;
+          color: #fff;
+          background-color: #007BFF;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s, transform 0.2s;
+        }
+
+        /* Ховер-эффект */
+        .button:hover {
+          background-color: #0056b3;
+        }
+
+        /* Эффект нажатия */
+        .button:active {
+          transform: scale(0.98);
+        }
+
+
+    }
+
+
+  </style>
+</head>
+<body>
+    <h1 align="center">{{ description }}</h1>
+    <ul>
+        <li>
+            <h4>{{ button1 }} </h4> <button class="button">Выбрать даты</button>
+        </li>
+        <li>
+            <h4>{{ button2 }}</h4>   <button class="button">Забронировать</button>
+        </li>
+        <li>
+            <h4>{{ button3 }}</h4>   <button class="button">Забронировать</button>
+        </li>
+    </ul>
+    <a href="/lakehouse"><button>Вернуться</button></a>
+</body>
+</html>
