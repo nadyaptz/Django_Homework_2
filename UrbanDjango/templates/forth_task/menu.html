@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel = 'stylesheet' type="text/css" href='{% static "style.css" %}'>
+
+</head>
+<body>
+
+{% block pagename %}
+<h1 align="center">{{ description }}</h1>
+{% endblock %}
+
+{% block mainmenu %}
+    <h4><a href="/lakehouse">Главная страница</a></h4>
+    <h4><a href="/lakehouse/info">Информация</a></h4>
+    <h4><a href="/lakehouse/book">Забронировать</a></h4>
+{% endblock %}
+
+{% block content%}
+{% endblock %}
+
+
+</body>
+</html>
+

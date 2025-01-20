@@ -1,0 +1,21 @@
+{% extends "forth_task/menu.html" %}
+
+{% block pagename %}
+<h1 align="center">{{ description }}</h1>
+{% endblock %}
+
+    {% block mainmenu %}
+    {{ block.super }}
+    {% endblock %}
+
+{% block content %}
+
+    <ul>
+        {% for button in buttons %}
+        <li>
+            <h4>{{ button }} </h4> <button class="button">Забронировать</button>
+        </li>
+        {% endfor %}
+      </ul>
+    <a href="/lakehouse"><button class="small_button">Вернуться</button></a>
+{% endblock %}
